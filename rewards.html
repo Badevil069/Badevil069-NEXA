@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEXA - Rewards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/rewards.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar antigravity-panel">
+      <a href="/" class="logo" style="text-decoration: none; color: white; display: flex; align-items: center; gap: 10px;">
+        <svg class="nav-logo-svg" viewBox="0 0 100 100" width="36" height="36">
+          <defs>
+            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#6a35ff"/><stop offset="100%" stop-color="#e5fe40"/>
+            </linearGradient>
+          </defs>
+          <rect width="100" height="100" rx="20" fill="#0a0a0a"/>
+          <path d="M25 75 L25 25 L50 55 L75 25 L75 75 L62 75 L62 50 L50 65 L38 50 L38 75 Z" fill="url(#logoGrad)"/>
+        </svg> NEXA
+      </a>
+      <div class="nav-links">
+        <a href="/company.html">Company</a>
+        <a href="/rewards.html">Rewards</a>
+        <a href="/support.html">Support</a>
+        <a href="/download.html">Download</a>
+      </div>
+      <button class="btn-primary" onclick="window.location.href='/download.html'">Get Started</button>
+    </nav>
+
+    <!-- ===== HERO: Word-by-word reveal with particles ===== -->
+    <section class="rw-hero">
+      <!-- 3D Animated coin background -->
+      <div id="rw-hero-canvas" class="rw-hero-canvas"></div>
+      <!-- Floating particles -->
+      <div class="rw-particle rw-p1">✦</div>
+      <div class="rw-particle rw-p2">◆</div>
+      <div class="rw-particle rw-p3">●</div>
+      <div class="rw-particle rw-p4">✦</div>
+      <div class="rw-particle rw-p5">◆</div>
+      <div class="rw-particle rw-p6">●</div>
+      <div class="rw-particle rw-p7">✦</div>
+      <div class="rw-particle rw-p8">◆</div>
+      <!-- Animated background orbs -->
+      <div class="rw-orb rw-orb-1"></div>
+      <div class="rw-orb rw-orb-2"></div>
+      <div class="rw-orb rw-orb-3"></div>
+
+      <!-- High-Level Motion Graphic Elements (CSS/SVG) -->
+      <div class="rw-motion-graphic">
+        <svg viewBox="0 0 100 100" class="rw-motion-svg">
+          <circle cx="50" cy="50" r="48" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.5" />
+          <circle cx="50" cy="50" r="30" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="0.5" />
+        </svg>
+      </div>
+
+      <div class="rw-hero-text">
+        <span class="rw-word rw-w1">MEET</span>
+        <span class="rw-word rw-w2">THE</span>
+        <span class="rw-word rw-w3">REWARD</span>
+        <span class="rw-word rw-w4">COIN.</span>
+      </div>
+      <p class="rw-hero-sub">The currency that rewards you for every payment.</p>
+      <!-- Scroll indicator -->
+      <div class="rw-scroll-indicator">
+        <div class="rw-scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ===== STATS RIBBON ===== -->
+    <section class="rw-stats-ribbon">
+      <div class="rw-stat-item" id="rw-stat-1">
+        <span class="rw-stat-num" data-count="15">0</span>
+        <span class="rw-stat-suffix">%</span>
+        <span class="rw-stat-label">Value Back</span>
+      </div>
+      <div class="rw-stat-item" id="rw-stat-2">
+        <span class="rw-stat-num" data-count="50">0</span>
+        <span class="rw-stat-suffix">M+</span>
+        <span class="rw-stat-label">Coins Distributed</span>
+      </div>
+      <div class="rw-stat-item" id="rw-stat-3">
+        <span class="rw-stat-num" data-count="500">0</span>
+        <span class="rw-stat-suffix">+</span>
+        <span class="rw-stat-label">Luxury Partners</span>
+      </div>
+    </section>
+
+    <!-- ===== MEMBERSHIP TIERS: NEW SECTION ===== -->
+    <section class="rw-tiers-section">
+      <div class="container">
+        <h2 class="rw-section-heading">Hierarchy of <span class="text-purple">Status</span></h2>
+        <p class="rw-section-sub">Ascend the ranks. Unlock deeper utility and rare privileges.</p>
+        
+        <div class="rw-tiers-grid">
+          <!-- Bronze Tier -->
+          <div class="rw-tier-card bronze" id="tier-1">
+            <div class="rw-tier-glow"></div>
+            <div class="rw-tier-header">
+              <span class="rw-tier-name">BRONZE</span>
+              <div class="rw-tier-icon">⌥</div>
+            </div>
+            <div class="rw-tier-price">
+              <span class="rw-amount">Entry Level</span>
+            </div>
+            <ul class="rw-tier-features">
+              <li>✦ 1X Coin Multiplier</li>
+              <li>✦ Basic Rewards Catalog</li>
+              <li>✦ Standard Customer Support</li>
+            </ul>
+            <button class="rw-tier-btn">Current Status</button>
+          </div>
+
+          <!-- Gold Tier -->
+          <div class="rw-tier-card gold" id="tier-2">
+            <div class="rw-tier-badge">MOST POPULAR</div>
+            <div class="rw-tier-glow"></div>
+            <div class="rw-tier-header">
+              <span class="rw-tier-name">GOLD</span>
+              <div class="rw-tier-icon">✦</div>
+            </div>
+            <div class="rw-tier-price">
+              <span class="rw-amount">3X</span>
+              <span class="rw-period">Multipler</span>
+            </div>
+            <ul class="rw-tier-features">
+              <li>✦ 3X Coin Multiplier</li>
+              <li>✦ Priority Mystery Drops</li>
+              <li>✦ 50% Off Partner Vouchers</li>
+              <li>✦ 24/7 Priority Support</li>
+            </ul>
+            <button class="rw-tier-btn">Unlock Gold</button>
+          </div>
+
+          <!-- Platinum Tier -->
+          <div class="rw-tier-card platinum" id="tier-3">
+            <div class="rw-tier-glow"></div>
+            <div class="rw-tier-header">
+              <span class="rw-tier-name">PLATINUM</span>
+              <div class="rw-tier-icon">✧</div>
+            </div>
+            <div class="rw-tier-price">
+              <span class="rw-amount">10X</span>
+              <span class="rw-period">Multipler</span>
+            </div>
+            <ul class="rw-tier-features">
+              <li>✦ 10X Coin Multiplier</li>
+              <li>✦ Global Lounge Access</li>
+              <li>✦ Dedicated Concierge</li>
+              <li>✦ Zero Transaction Fees</li>
+              <li>✦ Exclusive Event Invites</li>
+            </ul>
+            <button class="rw-tier-btn">Achieve Platinum</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BRAND PARTNERS ===== -->
+    <section class="rw-partners-section">
+      <div class="container">
+        <div class="rw-partners-grid">
+          <div class="rw-partner-logo">Tesla</div>
+          <div class="rw-partner-logo">Rolex</div>
+          <div class="rw-partner-logo">Apple</div>
+          <div class="rw-partner-logo">Marriott</div>
+          <div class="rw-partner-logo">Emirates</div>
+          <div class="rw-partner-logo">Aman</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BENTO PERK HUB ===== -->
+    <section class="rw-perks-section">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 80px;">
+          <div>
+            <h2 class="rw-section-heading" style="text-align: left; margin-bottom: 10px;">The <span style="color: var(--color-neo-paccha);">Perk</span> Hub</h2>
+            <p style="color: rgba(255,255,255,0.4); font-size: 1.2rem; max-width: 500px;">Exclusive access to the lifestyle you've earned. Curated by NEXA.</p>
+          </div>
+          <div style="text-align: right;">
+            <span style="font-family: 'Space Mono', monospace; font-size: 0.8rem; letter-spacing: 4px; color: var(--color-neo-paccha);">UPDATED DAILY</span>
+          </div>
+        </div>
+        
+        <div class="rw-perks-grid">
+          <div class="rw-perk-card p-large" id="perk-1">
+            <span class="rw-perk-badge">ELITE TRAVEL</span>
+            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=1200" alt="Luxury Hotel" class="rw-perk-img">
+            <div class="rw-perk-content">
+              <h3 class="rw-perk-title">The World, Redefined</h3>
+              <p class="rw-perk-desc">Complimentary upgrades at over 2,000 Aman, Rosewood, and Four Seasons properties globally.</p>
+            </div>
+          </div>
+          <div class="rw-perk-card p-med" id="perk-2">
+            <span class="rw-perk-badge">GASTRONOMY</span>
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=1200" alt="Fine Dining" class="rw-perk-img">
+            <div class="rw-perk-content">
+              <h3 class="rw-perk-title">Michelin Access</h3>
+              <p class="rw-perk-desc">Direct reservations at tables that are "impossible" to book.</p>
+            </div>
+          </div>
+          <div class="rw-perk-card p-small" id="perk-3">
+            <span class="rw-perk-badge">CULTURE</span>
+            <img src="https://images.unsplash.com/photo-1514525253361-bee8718a300a?auto=format&fit=crop&q=80&w=1200" alt="VIP Concerts" class="rw-perk-img">
+            <div class="rw-perk-content">
+              <h3 class="rw-perk-title">Front Row</h3>
+              <p class="rw-perk-desc">Backstage passes to global tours and private gala access.</p>
+            </div>
+          </div>
+          <div class="rw-perk-card p-wide" id="perk-4">
+            <span class="rw-perk-badge">SERVICE</span>
+            <img src="https://images.unsplash.com/photo-1544161515-4af6b1d4970a?auto=format&fit=crop&q=80&w=1200" alt="Concierge" class="rw-perk-img">
+            <div class="rw-perk-content">
+              <h3 class="rw-perk-title">24/7 Global Concierge</h3>
+              <p class="rw-perk-desc">Anything, anywhere, any time. Your personal lifestyle manager is just a tap away.</p>
+            </div>
+          </div>
+          <div class="rw-perk-card p-small" id="perk-5">
+            <span class="rw-perk-badge">INNOVATION</span>
+            <img src="https://images.unsplash.com/photo-1550745679-33d01608216a?auto=format&fit=crop&q=80&w=1200" alt="Tech" class="rw-perk-img">
+            <div class="rw-perk-content">
+              <h3 class="rw-perk-title">Tech Drops</h3>
+              <p class="rw-perk-desc">Early access to limited edition flagship tech releases.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="rw-how-section">
+      <div class="container">
+        <h2 class="rw-section-heading" style="text-align: left;">Simple <span style="color: var(--color-neo-paccha);">Alchemy.</span></h2>
+        <div class="rw-steps-grid">
+          <div class="rw-step-card" id="rw-step-1">
+            <div class="rw-step-num">01</div>
+            <h3>Settle Bills</h3>
+            <p>Cards, rent, or utilities — every payment is an opportunity.</p>
+          </div>
+          <div class="rw-step-card" id="rw-step-2">
+            <div class="rw-step-num">02</div>
+            <h3>Manifest Coins</h3>
+            <p>Watch as your digital balance converts into pure potential.</p>
+          </div>
+          <div class="rw-step-card" id="rw-step-3">
+            <div class="rw-step-num">03</div>
+            <h3>Claim Luxury</h3>
+            <p>Exchange your coins for the experiences you deserve.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== REFER & EARN: NEW SECTION ===== -->
+    <section class="rw-refer-section">
+      <div class="container">
+        <div class="rw-refer-grid">
+          <div class="rw-refer-image-wrap">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=1200" alt="Referral Rewards" class="rw-refer-img">
+            <div class="rw-refer-overlay"></div>
+            <div class="rw-refer-price-tag">₹120</div>
+          </div>
+          <div class="rw-refer-content">
+            <span class="rw-perk-badge" style="position: static; margin-bottom: 20px;">NETWORK EFFECT</span>
+            <h2 class="rw-section-heading" style="text-align: left; margin-bottom: 20px;">The NEXA <span style="color: var(--color-neo-paccha);">Circle.</span></h2>
+            <p style="color: rgba(255,255,255,0.6); font-size: 1.2rem; margin-bottom: 30px;">Invite your circle to join the NEXA ecosystem. When they prosper, you earn a token of our gratitude.</p>
+            
+            <div class="rw-refer-rule">
+              <div class="rw-rule-icon">✦</div>
+              <div class="rw-rule-text">
+                <strong>Earn ₹120 Instantly</strong>
+                <p>Credited to your NEXA account for every successful referral.</p>
+              </div>
+            </div>
+            
+            <div class="rw-refer-rule">
+              <div class="rw-rule-icon">⚙</div>
+              <div class="rw-rule-text">
+                <strong>The Condition</strong>
+                <p>Reward is unlocked once your friend completes their first transaction.</p>
+              </div>
+            </div>
+
+            <button class="btn-primary" style="margin-top: 20px;">Invite Friends Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COIN SHOWCASE ===== -->
+    <section class="rw-coin-section">
+      <!-- Decorative corner shapes -->
+      <div class="rw-corner rw-corner-tl">◆</div>
+      <div class="rw-corner rw-corner-tr">◆</div>
+      <div class="rw-corner rw-corner-bl">◆</div>
+      <div class="rw-corner rw-corner-br">◆</div>
+      <div class="rw-coin-wrapper" id="coin-video-container">
+        <!-- Using high-quality placeholder image since video is missing -->
+        <img src="https://images.unsplash.com/photo-1621416848446-991125f756ee?auto=format&fit=crop&q=80&w=1200" alt="NEXA Reward Coin" class="rw-coin-video">
+      </div>
+      <div class="rw-coin-tagline">
+        <span class="rw-tag-line" id="rw-tag-1">Spin it.</span>
+        <span class="rw-tag-line" id="rw-tag-2">Earn it.</span>
+        <span class="rw-tag-line" id="rw-tag-3">Own it.</span>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="rw-testimonials-section">
+      <div class="container">
+        <h2 class="rw-section-heading">What Members <span class="text-purple">Say</span></h2>
+        <div class="rw-testimonials-grid">
+          <div class="rw-testimonial-card" id="rw-test-1">
+            <div class="rw-test-stars">★★★★★</div>
+            <p>"I earned ₹5,000 in cashback just from paying my credit card bills. NEXA is unreal."</p>
+            <div class="rw-test-author">
+              <div class="rw-test-avatar">R</div>
+              <div>
+                <strong>Rahul S.</strong>
+                <span>Gold Member</span>
+              </div>
+            </div>
+          </div>
+          <div class="rw-testimonial-card" id="rw-test-2">
+            <div class="rw-test-stars">★★★★★</div>
+            <p>"The mystery drops are addictive. Got a free Myntra voucher worth ₹2,000 last month!"</p>
+            <div class="rw-test-author">
+              <div class="rw-test-avatar">P</div>
+              <div>
+                <strong>Priya M.</strong>
+                <span>Platinum Member</span>
+              </div>
+            </div>
+          </div>
+          <div class="rw-testimonial-card" id="rw-test-3">
+            <div class="rw-test-stars">★★★★★</div>
+            <p>"Best rewards app. Period. The airport lounge access alone makes Platinum worth it."</p>
+            <div class="rw-test-author">
+              <div class="rw-test-avatar">A</div>
+              <div>
+                <strong>Arjun K.</strong>
+                <span>Platinum Member</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ: NEW SECTION ===== -->
+    <section class="rw-faq-section">
+      <div class="container">
+        <h2 class="rw-section-heading">Curiosities <span style="color: var(--color-neo-paccha);">Answered.</span></h2>
+        <div class="rw-faq-grid">
+          <div class="rw-faq-item">
+            <h3>How do I earn NEXA Coins?</h3>
+            <p>Every bill payment, UPI transaction, and card spend through NEXA generates coins. The rate depends on your Membership Tier.</p>
+          </div>
+          <div class="rw-faq-item">
+            <h3>Do coins expire?</h3>
+            <p>Coins earned by Gold and Platinum members have no expiration. Bronze member coins expire after 12 months of inactivity.</p>
+          </div>
+          <div class="rw-faq-item">
+            <h3>Can I transfer coins?</h3>
+            <p>Currently, coins are locked to your unique NEXA ID to ensure the security of our ecosystem.</p>
+          </div>
+          <div class="rw-faq-item">
+            <h3>How do I upgrade my tier?</h3>
+            <p>Tier upgrades are based on your annual spending volume and bill payment consistency. Premium tiers can also be unlocked via invite.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MARQUEE TICKER (RE-ADDED) ===== -->
+    <div class="rw-marquee">
+      <div class="rw-marquee-track">
+        <span>REFER & EARN ✦ NEXA CIRCLE ✦ ₹120 PER INVITE ✦ LUXURY UNLOCKED ✦ BEYOND BANKING ✦ REFER & EARN ✦ NEXA CIRCLE ✦ ₹120 PER INVITE ✦</span>
+        <span>REFER & EARN ✦ NEXA CIRCLE ✦ ₹120 PER INVITE ✦ LUXURY UNLOCKED ✦ BEYOND BANKING ✦ REFER & EARN ✦ NEXA CIRCLE ✦ ₹120 PER INVITE ✦</span>
+      </div>
+    </div>
+
+    <!-- ===== CTA BANNER ===== -->
+    <section class="rw-cta-section">
+      <div class="rw-cta-orb rw-cta-orb-1"></div>
+      <div class="rw-cta-orb rw-cta-orb-2"></div>
+      
+      <!-- Liquid Background Overlay -->
+      <div style="position: absolute; inset: 0; background: radial-gradient(circle at 70% 30%, rgba(106,53,255,0.1) 0%, transparent 60%); pointer-events: none;"></div>
+
+      <div class="container" style="text-align: center; position: relative; z-index: 1;">
+        <span style="font-family: 'Space Mono', monospace; font-size: 0.9rem; letter-spacing: 5px; color: var(--color-neo-paccha); display: block; margin-bottom: 20px;">ENROLLMENT OPEN</span>
+        <h2 class="rw-cta-title">Settle for <br><span style="color: var(--color-neo-paccha);">Beyond.</span></h2>
+        <p class="rw-cta-sub">Your digital footprint is now a luxury asset. Forge your legacy with the NEXA ecosystem.</p>
+        
+        <div style="display: flex; gap: 20px; justify-content: center; margin-top: 40px;">
+          <button class="btn-primary btn-large" onclick="window.location.href='/download.html'">Download App</button>
+          <button class="btn-secondary btn-large" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #fff;">View Perks</button>
+        </div>
+
+        <div style="margin-top: 80px; opacity: 0.3; display: flex; justify-content: center; gap: 40px; font-size: 0.8rem; letter-spacing: 2px;">
+          <span>NO JOINING FEE</span>
+          <span>✦</span>
+          <span>INVITE ONLY ACCESS</span>
+          <span>✦</span>
+          <span>GLOBAL CONCIERGE</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer charcoal-layer">
+      <div class="container flex-between">
+        <div class="logo gold-accent">NEXA</div>
+        <div class="footer-links">
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Security</a>
+        </div>
+        <p>&copy; 2026 NEXA Technologies. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
